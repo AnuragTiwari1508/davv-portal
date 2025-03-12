@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="images.png" alt="University Logo">
+        <h1>Devi Ahilya Vishwavidyalaya, Indore</h1>
+    </header>
+
+    <div class="container">
+        <!-- Notice Section -->
+        <div class="notice-board">
+            <h2>Admission Notices</h2>
+            <div class="notice-container">
+                <ul id="notice-list">
+                    <li>Helpline</li>
+                    <li>Info. Brochure of all UTD's</li>
+                    <li>HOD of UTD's</li>
+                    <li>Admission Info. in BSc</li>
+                    <li>Admission Open in BTech</li>
+                    <li>Admission Open in MTech</li>
+                    <li>Admission Open in BSc</li>
+                    <li>Admisssion open in iet</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Admission Form -->
+        <div class="form-container">
+            <h2>Apply for Admission</h2>
+            <form id="admissionForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Mobile Number:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="previousEducation">Select Previous Qualification:</label>
+                <select id="previousEducation" required>
+                    <option value="">-- Select Qualification --</option>
+                    <option value="10+2">10+2</option>
+                    <option value="Bachelors">Bachelors</option>
+                    <option value="Masters">Masters</option>
+                </select>
+                <div id="categorySelection" style="display: none;">
+                    <label for="category">Select Category:</label>
+                    <select id="category" required>
+                        <option value="">-- Select Category --</option>
+                    </select>
+                </div>
+                
+
+                <div id="courseSelection" style="display: none;">
+                    <label for="course">Select Course:</label>
+                    <select id="course" required>
+                        <option value="">-- Select Course --</option>
+                    </select>
+                </div>
+
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
